@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "MVVM_DataSource.h"
+#import "MVVMcell.h"
+#import "MVVMmodel.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<UITableViewDelegate>
+
+@property(nonatomic,strong)UITableView * tableView;
+@property(nonatomic,strong)NSMutableArray * myDataArray;
+@property(nonatomic,strong)dataSourceModel * dataSource;
 
 @end
 
