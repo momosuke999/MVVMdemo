@@ -8,13 +8,54 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface MVVMcell : UITableViewCell
+#import "Masonry.h"
+#import "MVVMcell.h"
 
-@property(nonatomic,strong)UILabel * filmNameLabel;
-@property(nonatomic,strong)UILabel * filmEnNameLabel;
-@property(nonatomic,strong)UIImageView * filmIconLabel;
+@implementation MVVMcell
+
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if(self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
+        [self setupUI];
+        
+    }
+    return self;
+}
 
 
 
+
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+    [self.filmNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.contentView).offset(0);
+        make.right.equalTo(self.contentView).offset(0);
+        make.height.mas_equalTo(30);
+        make.top.equalTo(self.contentView).offset(5);
+    }];
+    
+    [self.filmEnNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        //    make.left.equalTo(self.contentView).offset(0);
+        make.right.equalTo(self.contentView).offset(0);
+        make.height.mas_equalTo(30);
+        make.top.equalTo(self.contentView).offset(5);
+    }];
+    
+    
+    self.filmIconLabel.opaque = YES;
+    // UIImageView * icon1 = [[UIImageView alloc]init];
+    [self.contentView addSubview:self.filmIconLabel];
+    self.filmIconLabel.frame =CGRectMake(5, 100, 70, 100);
+    //self.filmIconLabel = icon1;
+}
+
+- (void)setupUI{
+    
+    [self.contentView addSubview:self.filmNameLabel];
+    [self.contentView addSubview:self.filmEnNameLabel];
+    [self.contentView addSubview:self.filmIconLabel];
+    
+}
 
 @end

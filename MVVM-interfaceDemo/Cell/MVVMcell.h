@@ -8,9 +8,15 @@
 
 #import "MVVMview_model.h"
 
-@implementation MVVMcell
 
--(instancetype)initWithStyle:(UITableViewCellStyle)style reusueIdentifier:()
+@interface MVVMcell : UITableViewCell
+
+@property(nonatomic,strong)UILabel * filmNameLabel;
+@property(nonatomic,strong)UILabel * filmEnNameLabel;
+@property(nonatomic,strong)UIImageView * filmIconLabel;
+
+
+
 
 @end
 
