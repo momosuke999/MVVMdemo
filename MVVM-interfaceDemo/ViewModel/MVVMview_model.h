@@ -8,9 +8,12 @@
 
 //#import "MVVMcell.h"
 #import "MVVMmodel.h"
-#import "VIewController.h"
+#import "ViewController.h"
+#import "BaseVieModel.h"
 
-@interface MVVMview_model : NSObject
+//#import "MVPprotocol.h"
+
+@interface MVVMview_model : BaseViewModel
 
 @property (nonatomic,strong)NSMutableArray * myDataArray;
 

@@ -14,14 +14,17 @@
 
 @property(nonatomic, copy) CellConfigureBefore cellConfigBefore;
 
+@property(nonatomic, copy) reloadData reloadData;
+
 @end
 
 @implementation dataSourceModel
 
--(id)initWithIdentifier:(NSString *)identifier configureBlock:(CellConfigureBefore)before{
+-(id)initWithIdentifier:(NSString *)identifier configureBlock:(CellConfigureBefore)before reloadData:(reloadData)reloadData{
     if(self = [super init]){
         _cellIdentifier = identifier;
         _cellConfigBefore = [before copy];
+        _reloadData = [reloadData copy];
     }
     return self;
 }

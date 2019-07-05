@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3556E3B22CEF6E50096D26A /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3556E3A22CEF6E50096D26A /* BaseViewModel.m */; };
 		F3785C1D22CD97E20074AC24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3785C1C22CD97E20074AC24 /* AppDelegate.m */; };
 		F3785C2022CD97E20074AC24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3785C1F22CD97E20074AC24 /* ViewController.m */; };
 		F3785C2322CD97E20074AC24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3785C2122CD97E20074AC24 /* Main.storyboard */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F3556E3A22CEF6E50096D26A /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		F3556E3C22CEF6F10096D26A /* BaseVieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVieModel.h; sourceTree = "<group>"; };
 		F3785C1822CD97E20074AC24 /* MVVM-interfaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-interfaceDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3785C1B22CD97E20074AC24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3785C1C22CD97E20074AC24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -206,8 +209,10 @@
 		F3785C5822CD98D70074AC24 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				F3785C5522CD98B80074AC24 /* MVVMview_model.h */,
+				F3556E3A22CEF6E50096D26A /* BaseViewModel.m */,
+				F3556E3C22CEF6F10096D26A /* BaseVieModel.h */,
 				F3785C5322CD98AD0074AC24 /* MVVMview_model.m */,
+				F3785C5522CD98B80074AC24 /* MVVMview_model.h */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3556E3B22CEF6E50096D26A /* BaseViewModel.m in Sources */,
 				F3785C2022CD97E20074AC24 /* ViewController.m in Sources */,
 				F3785C7B22CE02A50074AC24 /* MASConstraintMaker.m in Sources */,
 				F3785C8622CE04950074AC24 /* MVVM_DataSource.m in Sources */,
@@ -598,12 +604,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LC94G25K76;
 				INFOPLIST_FILE = "$(SRCROOT)/MVVM-interfaceDemo/AppDelegate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aa.MVVM-interfaceDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = faceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -614,12 +622,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LC94G25K76;
 				INFOPLIST_FILE = "$(SRCROOT)/MVVM-interfaceDemo/AppDelegate/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "aa.MVVM-interfaceDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = faceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -9,13 +9,14 @@
 
 #import "MVVMsub_model.h"
 
-@interface MVVMmodel : NSObject
 
-@property(nonatomic,strong) NSDictionary * rating;
+@interface MVVMmodel : NSObject <NSCopying>
+
+@property(nonatomic,strong) data_rating * rating;
 
 @property(nonatomic,strong) NSArray * genres;
 
-@property(nonatomic) NSString * title;
+@property(nonatomic,copy) NSString * title;
 
 @property(nonatomic, strong) NSArray< data_casts*> *casts;
 
@@ -35,7 +36,7 @@
 
 @property(nonatomic, strong)NSArray * pubdates;
 
-@property(nonatomic, assign) NSInteger year;
+@property(nonatomic, assign) NSInteger * year;
 
 @property(nonatomic, strong) NSDictionary * images;
 

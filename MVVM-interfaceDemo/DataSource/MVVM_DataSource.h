@@ -12,13 +12,14 @@
 //put dataSource into block
 
 typedef void (^CellConfigureBefore)(id cell, id model, NSIndexPath * indexPath);
+typedef  void (^reloadData)(NSMutableArray * array);
 
 @interface dataSourceModel : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 
 @property(nonatomic, strong) NSMutableArray *myDataArray;
 
--(id)initWithIdentifier:(NSString*)identifier configureBlock:(CellConfigureBefore) before;
+-(id)initWithIdentifier:(NSString*)identifier configureBlock:(CellConfigureBefore) before reloadData: (reloadData)reloadData;
 
 -(void)addMyDataArray:(NSArray *)datas;
 

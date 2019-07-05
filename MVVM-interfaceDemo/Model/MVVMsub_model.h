@@ -6,24 +6,27 @@
 //  Copyright © 2019年 CHUXIANWANG. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+@class data_casts, data_directors,data_details,data_rating;
+
 @interface MVVMsub_model : NSObject
 
 @end
 
-
-@interface  data_rating : NSObject
+@interface data_rating:NSObject
 
 @property(nonatomic,assign) NSInteger max;
 
 @property(nonatomic,assign) double average;
 
-@property(nonatomic, strong) NSDictionary * details;
+@property(nonatomic, strong)data_details * details;
 
-@property(nonatomic,assign) NSInteger stars;
+@property(nonatomic,assign) NSString * stars;
 
 @property(nonatomic, assign) NSInteger min;
 
 @end
+
 
 
 @interface data_casts : NSObject
@@ -40,6 +43,17 @@
 
 @end
 
+
+@interface data_details:NSObject
+
+@property(nonatomic,assign) NSInteger one;
+@property(nonatomic,assign) NSInteger two;
+@property(nonatomic,assign) NSInteger three;
+@property(nonatomic,assign) NSInteger four;
+@property(nonatomic,assign) NSInteger five;
+
+
+@end
 
 @interface data_directors : NSObject
 
