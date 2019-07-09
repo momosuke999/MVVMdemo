@@ -14,21 +14,22 @@
 
 -(void)loadData{
 
-    dispatch_queue_t que = dispatch_queue_create("udpios", DISPATCH_QUEUE_CONCURRENT);
-    
-    dispatch_async(que, ^{
-    NSString * url = @"https://api.douban.com/v2/movie/in_theaters?apikey=0b2bdeda43b5688921839c8ecb20399b&city=%B1%B1%BE%A9&start=0&count=100&client=&udid=";
-    
-    NSURL* Dataurl = [NSURL URLWithString:url];
-    
-    NSString * Datastring = [NSString stringWithContentsOfURL:Dataurl encoding:NSUTF8StringEncoding error:nil];
-    
-    NSData * data = [Datastring dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-    
+   dispatch_queue_t que = dispatch_queue_create("create", DISPATCH_QUEUE_CONCURRENT);
+  
+   dispatch_async(que, ^{
+       
+       NSString * url = @"https://api.douban.com/v2/movie/in_theaters?apikey=0b2bdeda43b5688921839c8ecb20399b&city=%B1%B1%BE%A9&start=0&count=100&client=&udid=";
+
+       NSURL* Dataurl = [NSURL URLWithString:url];
+       
+       NSString * Datastring = [NSString stringWithContentsOfURL:Dataurl encoding:NSUTF8StringEncoding error:nil];
+       
+       NSData * data = [Datastring dataUsingEncoding:NSUTF8StringEncoding];
+       
+       NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+       
     NSArray *  subjectsArray = jsonData[@"subjects"];
-    
+       [self.myDataArray removeAllObjects];
     
     for (NSDictionary * tempDict in subjectsArray) {
         MVVMmodel* model = [MVVMmodel mvvmModelWithDict:tempDict];
@@ -38,7 +39,7 @@
     dispatch_async(dispatch_get_main_queue(),^{
         
         self.successBlock(self.myDataArray);
-        });
+       });
     
    });
 }
@@ -64,6 +65,8 @@
 
 //notity the new values
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    
+    NSLog(@"属性改变了%@",change[NSKeyValueChangeNewKey]);
     self.successBlock(change[NSKeyValueChangeNewKey]);
 
 }

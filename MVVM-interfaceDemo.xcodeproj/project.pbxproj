@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31B670622D338C50014DB41 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31B670522D338C50014DB41 /* SDWebImage.framework */; };
+		F31B670722D338CE0014DB41 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F31B670522D338C50014DB41 /* SDWebImage.framework */; };
+		F31B670822D338CE0014DB41 /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F31B670522D338C50014DB41 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3556E3B22CEF6E50096D26A /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3556E3A22CEF6E50096D26A /* BaseViewModel.m */; };
+		F366FEE622D42C8500FC8913 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F366FEE522D42C8500FC8913 /* DetailViewController.m */; };
+		F366FEE922D4905E00FC8913 /* MVVM_MV.m in Sources */ = {isa = PBXBuildFile; fileRef = F366FEE822D4905E00FC8913 /* MVVM_MV.m */; };
+		F366FEED22D497DD00FC8913 /* ViewControllerRAC.m in Sources */ = {isa = PBXBuildFile; fileRef = F366FEEC22D497DC00FC8913 /* ViewControllerRAC.m */; };
 		F3785C1D22CD97E20074AC24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3785C1C22CD97E20074AC24 /* AppDelegate.m */; };
 		F3785C2022CD97E20074AC24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3785C1F22CD97E20074AC24 /* ViewController.m */; };
 		F3785C2322CD97E20074AC24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3785C2122CD97E20074AC24 /* Main.storyboard */; };
@@ -51,9 +57,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F31B670922D338CE0014DB41 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F31B670822D338CE0014DB41 /* SDWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F31B670422D328A40014DB41 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F31B670522D338C50014DB41 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
 		F3556E3A22CEF6E50096D26A /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		F3556E3C22CEF6F10096D26A /* BaseVieModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseVieModel.h; sourceTree = "<group>"; };
+		F366FEE522D42C8500FC8913 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F366FEE822D4905E00FC8913 /* MVVM_MV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_MV.m; sourceTree = "<group>"; };
+		F366FEEA22D4906C00FC8913 /* MVVM_MV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVM_MV.h; sourceTree = "<group>"; };
+		F366FEEB22D497D100FC8913 /* ViewControllerRAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerRAC.h; sourceTree = "<group>"; };
+		F366FEEC22D497DC00FC8913 /* ViewControllerRAC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRAC.m; sourceTree = "<group>"; };
 		F3785C1822CD97E20074AC24 /* MVVM-interfaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-interfaceDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3785C1B22CD97E20074AC24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3785C1C22CD97E20074AC24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -114,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31B670722D338CE0014DB41 /* SDWebImage.framework in Frameworks */,
+				F31B670622D338C50014DB41 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,10 +163,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F366FEE722D4904900FC8913 /* ViewModel2 */ = {
+			isa = PBXGroup;
+			children = (
+				F366FEE822D4905E00FC8913 /* MVVM_MV.m */,
+				F366FEEA22D4906C00FC8913 /* MVVM_MV.h */,
+				F366FEEB22D497D100FC8913 /* ViewControllerRAC.h */,
+				F366FEEC22D497DC00FC8913 /* ViewControllerRAC.m */,
+			);
+			path = ViewModel2;
+			sourceTree = "<group>";
+		};
 		F3785C0F22CD97E10074AC24 = {
 			isa = PBXGroup;
 			children = (
 				F3785C1A22CD97E20074AC24 /* MVVM-interfaceDemo */,
+				F31B670522D338C50014DB41 /* SDWebImage.framework */,
 				F3785C3322CD97E30074AC24 /* MVVM-interfaceDemoTests */,
 				F3785C3E22CD97E30074AC24 /* MVVM-interfaceDemoUITests */,
 				F3785C1922CD97E20074AC24 /* Products */,
@@ -162,6 +203,7 @@
 				F3785C8422CE045D0074AC24 /* DataSource */,
 				F3785C5622CD98BB0074AC24 /* Model */,
 				F3785C5722CD98CC0074AC24 /* Cell */,
+				F366FEE722D4904900FC8913 /* ViewModel2 */,
 				F3785C5822CD98D70074AC24 /* ViewModel */,
 				F3785C5C22CE02A40074AC24 /* Masonry */,
 			);
@@ -199,6 +241,8 @@
 		F3785C5722CD98CC0074AC24 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				F31B670422D328A40014DB41 /* DetailViewController.h */,
+				F366FEE522D42C8500FC8913 /* DetailViewController.m */,
 				F3785C5022CD98920074AC24 /* MVVMcell.h */,
 				F3785C5122CD989E0074AC24 /* MVVMcell.m */,
 				F3785C8922CE08790074AC24 /* MVPprotocol.h */,
@@ -293,6 +337,7 @@
 				F3785C1422CD97E20074AC24 /* Sources */,
 				F3785C1522CD97E20074AC24 /* Frameworks */,
 				F3785C1622CD97E20074AC24 /* Resources */,
+				F31B670922D338CE0014DB41 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,14 +466,17 @@
 				F3785C5222CD989E0074AC24 /* MVVMcell.m in Sources */,
 				F3785C7922CE02A50074AC24 /* ViewController+MASAdditions.m in Sources */,
 				F3785C8222CE02A50074AC24 /* MASViewAttribute.m in Sources */,
+				F366FEED22D497DD00FC8913 /* ViewControllerRAC.m in Sources */,
 				F3785C7822CE02A50074AC24 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				F3785C7A22CE02A50074AC24 /* MASCompositeConstraint.m in Sources */,
 				F3785C5422CD98AD0074AC24 /* MVVMview_model.m in Sources */,
 				F3785C7C22CE02A50074AC24 /* MASLayoutConstraint.m in Sources */,
 				F3785C7E22CE02A50074AC24 /* View+MASAdditions.m in Sources */,
 				F3785C7F22CE02A50074AC24 /* ImageDownLoad.m in Sources */,
+				F366FEE922D4905E00FC8913 /* MVVM_MV.m in Sources */,
 				F3785C7D22CE02A50074AC24 /* NSArray+MASAdditions.m in Sources */,
 				F3785C4E22CD98760074AC24 /* MVVMmodel.m in Sources */,
+				F366FEE622D42C8500FC8913 /* DetailViewController.m in Sources */,
 				F3785C2B22CD97E30074AC24 /* main.m in Sources */,
 				F3785C1D22CD97E20074AC24 /* AppDelegate.m in Sources */,
 				F3785C8022CE02A50074AC24 /* MASConstraint.m in Sources */,
@@ -605,13 +653,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LC94G25K76;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MVVM-interfaceDemo/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = faceDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = faceDem66o;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,13 +675,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LC94G25K76;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/MVVM-interfaceDemo/AppDelegate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = faceDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = faceDem66o;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

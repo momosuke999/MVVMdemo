@@ -15,7 +15,7 @@ typedef void (^FailBlock)(id data);
 @interface BaseViewModel :NSObject{
     @public
     NSString * title;
-    NSString * original_title;
+ //   NSString * original_title;
 }
 
 @property (nonatomic, copy ) SuccessBlock successBlock;

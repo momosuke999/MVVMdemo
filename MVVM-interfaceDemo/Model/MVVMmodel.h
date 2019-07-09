@@ -12,7 +12,7 @@
 
 @interface MVVMmodel : NSObject <NSCopying>
 
-@property(nonatomic,strong) data_rating * rating;
+@property(nonatomic,strong) NSDictionary * rating;
 
 @property(nonatomic,strong) NSArray * genres;
 

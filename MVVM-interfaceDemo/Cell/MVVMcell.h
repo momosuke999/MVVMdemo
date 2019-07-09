@@ -15,7 +15,18 @@
 @property(nonatomic,strong)UILabel * filmEnNameLabel;
 @property(nonatomic,strong)UIImageView * filmIconLabel;
 
+@property(nonatomic, strong)UILabel * filmRateLabel;
+@property(nonatomic,strong)UILabel * filmPbDateLabel;
+@property(nonatomic,strong)UIButton * detailsButton;
 
+@property(nonatomic,strong)UICollectionView * directorsC;
+@property(nonatomic,strong)UICollectionView * actorsC;
+
+@property(nonatomic,strong)UILabel * directors;
+@property(nonatomic,strong)UILabel * actors;
+
+
+@property(nonatomic,strong)UINavigationController * detailVC;
 
 
 @end

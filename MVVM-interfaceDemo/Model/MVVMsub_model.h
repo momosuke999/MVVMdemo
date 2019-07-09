@@ -7,25 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class data_casts, data_directors,data_details,data_rating;
+@class data_casts, data_directors;
 
 @interface MVVMsub_model : NSObject
 
 @end
 
-@interface data_rating:NSObject
 
-@property(nonatomic,assign) NSInteger max;
-
-@property(nonatomic,assign) double average;
-
-@property(nonatomic, strong)data_details * details;
-
-@property(nonatomic,assign) NSString * stars;
-
-@property(nonatomic, assign) NSInteger min;
-
-@end
 
 
 
@@ -44,16 +32,7 @@
 @end
 
 
-@interface data_details:NSObject
 
-@property(nonatomic,assign) NSInteger one;
-@property(nonatomic,assign) NSInteger two;
-@property(nonatomic,assign) NSInteger three;
-@property(nonatomic,assign) NSInteger four;
-@property(nonatomic,assign) NSInteger five;
-
-
-@end
 
 @interface data_directors : NSObject
 
