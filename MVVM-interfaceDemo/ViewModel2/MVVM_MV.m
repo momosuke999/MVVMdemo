@@ -12,17 +12,15 @@
 @implementation MVVM_MV
 
 
--(instancetype)init{
-    if(self == [super init]){
-        [self initViewModel];
-    }
-    return self;
-}
-
-
--(void)initViewModel{
-    @weakify(self);
-    self.command = [[RACCommand alloc] initWithSignalBlock ]
-}
+//-(instancetype)init{
+//    if(self == [super init]){
+//        [self initViewModel];
+//    }
+//    return self;
+//}
+//-(void)initViewModel{
+  //  @weakify(self);
+//    self.command = [[RACCommand alloc] initWithSignalBlock ]
+//}
 
 @end

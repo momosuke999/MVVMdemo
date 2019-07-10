@@ -133,7 +133,6 @@
 		F3785C7722CE02A40074AC24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3785C8522CE04950074AC24 /* MVVM_DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVM_DataSource.m; sourceTree = "<group>"; };
 		F3785C8722CE049D0074AC24 /* MVVM_DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVM_DataSource.h; sourceTree = "<group>"; };
-		F3785C8922CE08790074AC24 /* MVPprotocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPprotocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,7 +244,6 @@
 				F366FEE522D42C8500FC8913 /* DetailViewController.m */,
 				F3785C5022CD98920074AC24 /* MVVMcell.h */,
 				F3785C5122CD989E0074AC24 /* MVVMcell.m */,
-				F3785C8922CE08790074AC24 /* MVPprotocol.h */,
 			);
 			path = Cell;
 			sourceTree = "<group>";

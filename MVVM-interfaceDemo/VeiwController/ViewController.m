@@ -67,15 +67,15 @@ static NSString * const reuserId = @"reuserId";
         
         NSDictionary * imageURLs = model.images;
         NSString * imageURL =[imageURLs objectForKey:@"small"];
-        //NSURL * imagurl = [NSURL URLWithString:imageURL];
-        
-        //dispatch_async(dispatch_get_main_queue(), ^{
+  //      NSURL * imagurl = [NSURL URLWithString:imageURL];
+    //
+//        dispatch_async(dispatch_get_main_queue(), ^{
        
 
        [cell.filmIconLabel sd_setImageWithURL:[NSURL URLWithString:imageURL]];
         
-     //   UIImage * image =[UIImage imageWithData: [NSData dataWithContentsOfURL:imagurl]];
-       // cell.filmIconLabel.image = image;
+      // UIImage * image =[UIImage imageWithData: [NSData dataWithContentsOfURL:imagurl]];
+        //cell.filmIconLabel.image = image;
         //});
         
         
@@ -88,7 +88,7 @@ static NSString * const reuserId = @"reuserId";
         if([dstr isEqualToString: @"0.00"]){
             cell.filmRateLabel.text = @"暂无评分";
         }
-        //NSDecimalNumber *dn = [NSDecimalNumber decimalNumberWithString:dstr];    //NSString *string7 = [dn stringValue];
+  
         else{
             cell.filmRateLabel.text = [NSString stringWithFormat:@"%@: %@", string6,dstr];
         }
